@@ -1,0 +1,153 @@
+/* Basic  Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:aqua;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styling */
+header {
+    background: #1570a9;
+    color: black;
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+header h1 {
+    display: inline-block;
+    white-space: nowrap;
+    padding-left: 100%; 
+    animation: slideIn 10s linear infinite; 
+}
+
+/* Keyframes for sliding animation */
+@keyframes slideIn {
+    0% {
+        transform: translateX(100%); 
+    }
+    50% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-100%); 
+    }
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+    margin: 20px 0;
+}
+
+nav ul {
+    padding: 10px 0;
+    list-style: none;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+}
+
+nav ul li {
+    display: inline; 
+}
+
+/* Styling the links to appear as circular buttons */
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; 
+    font-size: 16px;
+    font-weight: bold;
+    color: white; 
+    width: 60px;
+    height: 60px;
+    border-radius: 10px; 
+    width: 80px;
+    height:40px ;
+    background-color: #2575fc; 
+    transition: all 0.3s ease; 
+}
+
+/* Add spacing between links */
+nav a:not(:last-child) {
+    margin-right: 15px;
+}
+
+/* Hover effect */
+nav a:hover {
+    background-color: #0056b3; 
+    transform: scale(1.1);
+}
+
+/* Active (clicked) state */
+nav a:active {
+    background-color: #ff6347; 
+    transform: scale(0.95); 
+}
+
+/* Section Styling */
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+h2 {
+    color: black;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #2a07f3;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+    padding: 10px;
+    background: #a566d3;
+    color: #0ee753;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
